@@ -16,4 +16,8 @@ public class Card {
     public String toString() {
         return "" + value + " of " + suit;
     }
+
+    public int getScore() {
+        return this.value.score;
+    }
 }
