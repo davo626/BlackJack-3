@@ -12,6 +12,8 @@ public class LimitIntellect extends Intellect {
 
     @Override
     public Command think(int score) {
+        if(score>21)
+            return Command.STAND;
         if(score>=this.limit){
             return Command.STAND;
         }else{

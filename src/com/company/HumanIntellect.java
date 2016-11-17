@@ -10,6 +10,8 @@ public class HumanIntellect extends Intellect {
 
     @Override
     public Command think(int score) {
+        if(score>21)
+            return Command.STAND;
         do{
             System.out.print("hit/stand: ");
             String s = in.nextLine();

@@ -6,6 +6,13 @@ package com.company;
 public class Player {
     Hand hand = new Hand();
     Intellect intellect;
+    public PlayerState state;
+    String name;
+
+    public Player(String name, Intellect intellect) {
+        this.intellect = intellect;
+        this.name = name;
+    }
 
     public void take(Card current) {
         this.hand.add(current);
